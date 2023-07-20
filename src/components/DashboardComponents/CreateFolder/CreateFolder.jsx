@@ -66,9 +66,9 @@ const CreateFolder = ({ setIsCreateFolderModalOpen }) => {
   return (
     <div
       className="col-md-12 position-fixed top-0 left-0 w-100 h-100"
-      style={{ background: "rgba(0, 0, 0, 0.4)", zIndex: 9999 }}
+      style={{ background: "rgb(0,128,128)", zIndex: 9999 }}
     >
-      <div className="row align-items-cnter justify-content-center">
+      <div className="row align-items-cnter  justify-content-center">
         <div className="col-md-4 mt-5 bg-white rounded p-4">
           <div className="d-flex justify-content-between">
             <h4>Create Folder</h4>

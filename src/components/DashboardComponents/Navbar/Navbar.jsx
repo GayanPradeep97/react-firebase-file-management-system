@@ -8,8 +8,8 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm  p-3">
-      <Link className="navbar-brand ms-5" to="/dashboard">
+    <nav className="navbar navbar-expand-lg navbar-light shadow-sm ">
+      <Link className="navbar-brand text-white ms-5" to="/dashboard">
         File Management System
       </Link>
 
@@ -18,8 +18,8 @@ const Navbar = () => {
           <>
             <li className="nav-item mx-2">
               <p className="my-0 mt-2 mx-2">
-                <span className="text-dark">Welcome, </span>
-                <span className="fw-bold">{user.displayName}</span>
+                <span className="text-white ">Welcome, </span>
+                <span className="fw-bold text-warning">{user.displayName}</span>
               </p>
             </li>
             <li className="nav-item mx-2">
@@ -28,12 +28,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <button
+              <Link
                 className="btn btn-success"
                 onClick={() => dispatch(SignOutUser())}
+                to="/"
               >
                 Logout
-              </button>
+              </Link>
             </li>
           </>
         ) : (

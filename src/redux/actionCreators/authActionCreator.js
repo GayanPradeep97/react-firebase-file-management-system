@@ -9,9 +9,11 @@ const loginUser = (payload) => {
   };
 };
 
+
 const logoutUser = () => {
   return {
     type: types.SIGN_OUT,
+    
   };
 };
 

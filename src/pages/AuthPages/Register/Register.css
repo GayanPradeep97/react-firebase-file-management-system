@@ -1,0 +1,31 @@
+
+.main{
+    /* position: absolute; */
+    height: 700px; 
+}
+
+.container-fluid{
+    position: relative;
+    left: -50px;
+    margin-top: 100px;
+    /* height: 100%; */
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.row{
+    width:800px;
+    position: relative;
+    bottom:40px;
+}
+
+.display-1{
+   position: relative;
+   left: -270px;
+   
+}
+a{
+    font-size: 20px;
+}
